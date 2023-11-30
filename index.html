@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>JARVIS-1: Open-world Multi-task Agents with Memory-Augmented Multimodal Language Models</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">    
+
+    <meta name="description" content="JARVIS-1: Open-world Multi-task Agents with Memory-Augmented Multimodal Language Models">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta itemprop="image" content="./images/architecture.png">
+
+
+     <!--FACEBOOK-->
+     <meta property="og:image" content="./images/architecture.png">
+     <meta property="og:image:type" content="image/png">
+     <meta property="og:image:width" content="1196">
+     <meta property="og:image:height" content="705">
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://craftjarvis-jarvis1.github.io/"/>
+     <meta property="og:title" content="JARVIS-1: Open-Ended Multi-task Agents with Memory-Augmented Multimodal Language Models" />
+     <meta property="og:description"
+         content="Project page for CraftJarvis JARVIS-1." />
+ 
+     <!--TWITTER-->
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="JARVIS-1: Open-world Multi-task Agents with Memory-Augmented Multimodal Language Models" />
+     <meta name="twitter:description"
+         content="Project page for CraftJarvis JARVIS-1." />
+     <meta name="twitter:image" content="./images/architecture.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+	
+    <style>
+        .nav-pills {
+          position: relative;
+          display: inline;
+        }
+        .imtip {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHNLP4KVZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LHNLP4KVZV');
+</script>
+<body>
+    <div class="container" id="main">
+        <div class="row mt-4">
+            <h2 class="col-md-12 text-center">
+                <b><font size="+6">JARVIS-1: Open-world Multi-task Agents with Memory-Augmented Multimodal Language Models</font></b></br> 
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                <br>
+                <li><a href="https://zhwang4ai.github.io/" target="_blank">Zihao Wang</a></li>
+                <li><a href="https://phython96.github.io/" target="_blank">Shaofei Cai</a></li>
+                <li><a href="https://liuanji.github.io/" target="_blank">Anji Liu</a></li>
+                <li><a href="https://craftjarvis-jarvis1.github.io/">Yonggang Jin</a></li>
+                <li><a href="https://craftjarvis-jarvis1.github.io/">Jinbing Hou</a></li>
+                <li><a href="https://craftjarvis-jarvis1.github.io/">Bowei Zhang</a></li>
+                <li><a href="https://linhaowei1.github.io/">Haowei Lin</a></li> <br>
+                <li><a href="https://craftjarvis-jarvis1.github.io/">Zhaofeng He</a></li>
+                <li><a href="https://zilongzheng.github.io/" target="_blank">Zilong Zheng</a></li> 
+                <li><a href="https://www.yangyaodong.com/" target="_blank">Yaodong Yang</a></li>
+                <li><a href="https://jeasinema.github.io/" target="_blank">Xiaojian Ma</a><sup>*</sup></li>
+                <li><a href="https://zero-lab-pku.github.io/personwise/liangyitao/" target="_blank">Yitao Liang</a><sup>*</sup></li>
+                <br>
+                <br>
+                    <a href="https://www.craftjarvis.org/">
+                        <image src="images/favicon.ico" height="40px"> 
+                            <font size="4">Team CraftJarvis</font><br>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-2 text-center">
+                <a href="https://arxiv.org/abs/2311.05997">
+                <image src="images/paper.png" height="50px">
+                <h4><strong>Paper</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://github.com/CraftJarvis/JARVIS-1">
+                <image src="images/github.png" height="50px">
+                <h4><strong>Code</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="#results">
+                <image src="images/video.png" height="50px">
+                <h4><strong>Video</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://twitter.com/jeasinema/status/1723900032653643796">
+                <image src="images/twitter.png" height="50px">
+                <h4><strong>Twitter</strong></h4>
+                </a>
+            </div>
+        </div>
+
+        <!-- <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                    <image src="images/minecraft_technical_tree.png" width="100%"></image>
+                </video>
+            </div>
+        </div> -->
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <video id="v0" width="100%" preload="metadata" playsinline muted onclick="setAttribute('controls', 'true');" loop autoplay>
+                    <source src="videos/jarvis.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3 class="mt-4 mb-2">
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Achieving human-like planning and control with multimodal observations in an open world is a key milestone for more functional generalist agents. Existing approaches can handle certain long-horizon tasks in an open world. However, they still struggle when the number of open-world tasks could potentially be infinite and lack the capability to progressively enhance task completion as game time progresses. We introduce <b>JARVIS-1</b>, an open-world agent that can perceive multimodal input (visual observations and human instructions), generate sophisticated plans, and perform embodied control, all within the popular yet challenging open-world Minecraft universe. Specifically, we develop <b>JARVIS-1</b> on top of pre-trained multimodal language models, which map visual observations and textual instructions to plans. The plans will be ultimately dispatched to the goal-conditioned controllers. We outfit <b>JARVIS-1</b> with a multimodal memory, which facilitates planning using both pre-trained knowledge and its actual game survival experiences. <b>JARVIS-1</b> is the existing most general agent in Minecraft, capable of completing over 200 different tasks using control and observation space similar to humans. These tasks range from short-horizon tasks, e.g., "chopping trees" to long-horizon tasks, e.g., "obtaining a diamond pickaxe". <b>JARVIS-1</b> performs exceptionally well in short-horizon tasks, achieving nearly perfect performance. In the classic long-term task of <i>ObtainDiamondPickaxe</i>, JARVIS-1 surpasses the reliability of current state-of-the-art agents by 5 times and can successfully complete longer-horizon and more challenging tasks.
+                </p>
+                <p style="text-align:center;">
+                    <image src="images/architecture.png" width="100%">
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3 id="vlm">Self-Improving JARVIS-1</h3>
+                <p>JARVIS-1 is able to self-improve following a life-long learning paradigm thanks to growing multimodal memory, sparking a more general intelligence and improved autonomy. 
+                    Next, we will demonstrate the performance of JARVIS-1 at different learning stages when completing the same task. 
+                    (One Epoch represents that all tasks in the task-pool have been executed by JARVIS-1 in the environment once, regardless of success or failure.)
+                </p>
+
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Given an Minecraft:iron_axe, smelt and craft a Minecraft:shears with empty inventory.</h5>
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <p><b> Epoch 1: </b></p> 
+                            <p>
+                                1) mine 3 logs <br> 
+                                2) craft 12 planks <br>
+                                3) craft 1 crafting_table <br>
+                                4) craft 4 stick <br>
+                                5) craft 1 wooden_pickaxe <br>
+                                6) mine 3 cobblestone <br>
+                                7) craft 1 stone_pickaxe <br>
+                                8) mine 2 iron_ore <br>
+                                <del>9) smelt 2 iron_ingot <br>
+                                10) craft 1 shears <br> </del> 
+                                <font color="#FF0000"> (Lack of furnace as tool) </font> <br> <br> <br> 
+                            </p>
+                            <video width="100%" preload="metadata" playsinline controls loop muted>
+                                <source src="videos/shears_epoch1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="col-md-4 mb-2">
+                            <p><b>Epoch 2: </b></p>
+                            <p>
+                                1) Mine 3 logs <br> 
+                                2) Craft 12 planks<br> 
+                                3) Craft 1 crafting_table<br> 
+                                4) Craft 4 sticks<br> 
+                                5) Craft 1 wooden_pickaxe<br> 
+                                6) Mine 8 cobblestone<br> 
+                                7) Craft 1 furnace<br> 
+                                8) Mine 3 cobblestone<br> 
+                                9) Craft 1 stone_pickaxe<br> 
+                                10) Mine 2 iron_ore<br> 
+                                11) Smelt 2 iron_ingot<br> 
+                                12) Craft 1 shears<br>
+                                <font color="#FF0000"> (Lack of fuel sometimes) </font> 
+                            </p>
+                            <video width="100%" preload="metadata" playsinline controls loop muted>
+                                <source src="videos/shears_epoch2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="col-md-4 mb-2">
+                            <p> <b>Epoch 3: </b></p>
+                            <p>
+                                1) mine <b>4</b> logs <i>(One more as fuel) </i> <br> 
+                                2) craft 12 planks <br>
+                                3) craft 1 crafting_table <br>
+                                4) craft 4 stick <br>
+                                5) craft 1 wooden_pickaxe <br>
+                                6) mine 11 cobblestone <br>
+                                7) craft 1 furnace <br>
+                                8) craft 1 stone_pickaxe <br>
+                                9) mine 2 iron_ore <br>
+                                10) smelt 2 iron_ingot <br>
+                                11) craft 1 shears <br>
+                                <font color="#FF0000"> (More accurate and efficient!) </font>  <br> <br>
+                            </p>
+                            <video width="100%" preload="metadata" playsinline controls loop muted>
+                                <source src="videos/shears_epoch3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        </div>
+
+                        <p> <i>1.5x Speed</i> </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3 id="real">Intruction-Following in Diverse Biomes</h3>
+                <p>JARVIS-1 can execute human instructions in diverse environments. We illustrate executions in different biomes below. </p>
+                
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Pick up a Minecraft:wooden_pickaxe</h5>
+                    <div class="card-body">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Execution in <u>Plains</u>:</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/wooden_pickaxe_plains.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>Execution in <u>Birch Forest</u>:</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/wooden_pickaxe_birch_forest.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Execution in <u>Jungle</u>:</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/wooden_pickaxe_jungle.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>Execution in <u>Savanna</u>:</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/wooden_pickaxe_savanna.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3 id="results">More Results</h3>
+                <p>Below we share some additional results of JARVIS-1 on Minecraft.
+                </p>
+
+                <p>
+                    <a type="button" href="#wood" class="btn btn-primary">Wood</a>
+                    <a type="button" href="#stone" class="btn btn-warning">Stone</a>
+                    <a type="button" href="#iron" class="btn btn-secondary">Iron</a>
+                    <a type="button" href="#gold" class="btn btn-success">Gold</a>
+                    <a type="button" href="#diamond" class="btn btn-danger">Diamond</a>
+                    <a type="button" href="#redstone" class="btn btn-warning">Redstone</a>
+                    <a type="button" href="#blocks" class="btn btn-info">Blocks</a>
+                    <a type="button" href="#armor" class="btn btn-dark">Armor</a>
+                    <a type="button" href="#decoration" class="btn btn-info">Decoration</a>
+                    <a type="button" href="#food" class="btn btn-success">Food</a>
+                </p>
+
+                <!-- <p><a type="button" href="#genvideo" class="btn btn-primary">Generated Video and Language Plans</a></p>
+                <p><a type="button" href="#vlm" class="btn btn-secondary">Effect of Using Planning with VLMs and Video Models</a></p>
+                <p><a type="button" href="#real" class="btn btn-success">Real Executions</a></p>
+                <p><a type="button" href="#generalization" class="btn btn-info">Generalization</a></p>
+                <p><a type="button" href="#limitations" class="btn btn-warning">Limitations</a></p> -->
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="wood">Wood Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Pick up a minecraft:chest</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="4" aria-label="size 4 select example">
+                            <option value="chest_1">
+                                1) Mine 3 minecraft:log with barehand
+                            </option>
+                            <option value="chest_2">
+                                2) Craft 12 minecraft:planks from minecraft:log 
+                            </option>
+                            <option value="chest_3">
+                                3) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="chest_4">
+                                4) Craft 1 minecaft:chest from 8 minecraft:planks on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_chest" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/chest.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Pick up a minecraft:acacia_trapdoor</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="4" aria-label="size 4 select example">
+                            <option value="acaciatrapdoor_1">
+                                1) Mine 3 minecraft:acacia_log with barehand
+                            </option>
+                            <option value="acaciatrapdoor_2">
+                                2) Craft 12 minecraft:acacia_planks from minecraft:log 
+                            </option>
+                            <option value="acaciatrapdoor_3">
+                                3) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="acaciatrapdoor_4">
+                                4) Craft 1 minecaft:acacia_trapdoor from 6 minecraft:planks on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_acaciatrapdoor" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/acacia_trapdoor.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="stone">Stone Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Craft a minecraft:stone_hoe</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="5" aria-label="size 5 select example">
+                            <option value="stonehoe_1">
+                                1) Mine 3 minecraft:log with barehand
+                            </option>
+                            <option value="stonehoe_2">
+                                2) Craft 12 minecraft:planks from minecraft:log 
+                            </option>
+                            <option value="stonehoe_3">
+                                3) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="stonehoe_4">
+                                4) Craft 4 minecraft:stick from 2 minecraft:planks
+                            </option>
+                            <option value="stonehoe_5">
+                                5) Craft 1 minecraft:wooden_pickaxe from 3 minecraft:planks and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="stonehoe_6">
+                                6) Mine 2 minecraft:cobblestone with minecraft:wooden_pickaxe
+                            </option>
+                            <option value="stonehoe_7">
+                                7) Craft 1 minecraft:stone_hoe from 2 minecraft:cobblestone and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_stonehoe" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/stone_hoe.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="iron">Iron Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Smelt iron and craft a minecraft:minecart</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="4" aria-label="size 4 select example">
+                            <option value="minecart_1">
+                                1) Mine 5 minecraft:log with barehand
+                            </option>
+                            <option value="minecart_2">
+                                2) Craft 16 minecraft:planks from minecraft:log 
+                            </option>
+                            <option value="minecart_3">
+                                3) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="minecart_4">
+                                4) Craft 8 minecraft:stick from 4 minecraft:planks
+                            </option>
+                            <option value="minecart_5">
+                                5) Craft 1 minecraft:wooden_pickaxe from 3 minecraft:planks and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="minecart_6">
+                                6) Mine 11 minecraft:cobblestone with minecraft:wooden_pickaxe
+                            </option>
+                            <option value="minecart_7">
+                                7) Craft 1 minecraft:furnace from 8 minecraft:cobblestone on minecraft:crafting_table
+                            </option>
+                            <option value="minecart_8">
+                                8) Craft 1 minecraft:stone_pickaxe from 3 minecraft:cobblestone and minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="minecart_9">
+                                9) Mine 5 minecraft:iron_ore with minecraft:stone_pickaxe
+                            </option>
+                            <option value="minecart_10">
+                                10) Smelt 5 minecraft:iron_ingot from 5 minecraft:iron_ore on minecraft:furnace
+                            </option>
+                            <option value="minecart_11">
+                                11) Craft 1 minecraft:minecart from 5 minecraft:iron_ingot on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_minecart" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/minecart.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="gold">Gold Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Smelt gold and craft a minecraft:golden_pickaxe</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="4" aria-label="size 4 select example">
+                            <option value="goldenpickaxe_1">
+                                1) Mine 6 minecraft:log with barehand
+                            </option>
+                            <option value="goldenpickaxe_2">
+                                2) Craft 16 minecraft:planks from minecraft:log 
+                            </option>
+                            <option value="goldenpickaxe_3">
+                                3) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="goldenpickaxe_4">
+                                4) Craft 8 minecraft:stick from 4 minecraft:planks
+                            </option>
+                            <option value="goldenpickaxe_5">
+                                5) Craft 1 minecraft:wooden_pickaxe from 3 minecraft:planks and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="goldenpickaxe_6">
+                                6) Mine 11 minecraft:cobblestone with minecraft:wooden_pickaxe
+                            </option>
+                            <option value="goldenpickaxe_7">
+                                7) Craft 1 minecraft:furnace from 8 minecraft:cobblestone on minecraft:crafting_table
+                            </option>
+                            <option value="goldenpickaxe_8">
+                                8) Craft 1 minecraft:stone_pickaxe from 3 minecraft:cobblestone and minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="goldenpickaxe_9">
+                                9) Mine 3 minecraft:iron_ore with minecraft:stone_pickaxe
+                            </option>
+                            <option value="goldenpickaxe_10">
+                                10) Smelt 3 minecraft:iron_ingot from 3 minecraft:iron_ore on minecraft:furnace
+                            </option>
+                            <option value="goldenpickaxe_11">
+                                11) Craft 1 minecraft:iron_pickaxe from 3 minecraft:iron_ingot and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="goldenpickaxe_12">
+                                12) Mine 3 minecraft:gold_ore with minecraft:iron_pickaxe
+                            </option>
+                            <option value="goldenpickaxe_13">
+                                13) Smelt 3 minecraft:gold_ingot from 3 minecraft:gold_ore on minecraft:furnace
+                            </option>
+                            <option value="goldenpickaxe_14">
+                                14) Craft 1 minecraft:golden_pickaxe from 3 minecraft:gold_ingot and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_goldenpickaxe" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/golden_pickaxe.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="diamond">Diamond Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Dig down to mine diamond and craft minecraft:diamond_pickaxe</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="5" aria-label="size 5 select example">
+                            <option value="diamondpickaxe_1">
+                                1) Mine 5 minecraft:log with barehand
+                            </option>
+                            <option value="diamondpickaxe_2">
+                                2) Craft 16 minecraft:planks from minecraft:log 
+                            </option>
+                            <option value="diamondpickaxe_3">
+                                3) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="diamondpickaxe_4">
+                                4) Craft 8 minecraft:stick from 4 minecraft:planks
+                            </option>
+                            <option value="diamondpickaxe_5">
+                                5) Craft 1 minecraft:wooden_pickaxe from 3 minecraft:planks and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="diamondpickaxe_6">
+                                6) Mine 11 minecraft:cobblestone with minecraft:wooden_pickaxe
+                            </option>
+                            <option value="diamondpickaxe_7">
+                                7) Craft 1 minecraft:furnace from 8 minecraft:cobblestone on minecraft:crafting_table
+                            </option>
+                            <option value="diamondpickaxe_8">
+                                8) Craft 1 minecraft:stone_pickaxe from 3 minecraft:cobblestone and minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="diamondpickaxe_9">
+                                9) Mine 3 minecraft:iron_ore with minecraft:stone_pickaxe
+                            </option>
+                            <option value="diamondpickaxe_10">
+                                10) Smelt 3 minecraft:iron_ingot from 3 minecraft:iron_ore on minecraft:furnace
+                            </option>
+                            <option value="diamondpickaxe_11">
+                                11) Craft 1 minecraft:iron_pickaxe from 3 minecraft:iron_ingot and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="diamondpickaxe_12">
+                                12) Mine 3 minecraft:diamond with minecraft:iron_pickaxe
+                            </option>
+                            <option value="diamondpickaxe_13">
+                                13) Craft 1 minecraft:diamond_pickaxe from 3 minecraft:diamond and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_diamondpickaxe" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/diamond_pickaxe.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="redstone">Redstone Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header"> Mine redstone and make minecraft:compass</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="4" aria-label="size 4 select example">
+                            <option value="compass_1">
+                                1) Mine 6 minecraft:log with barehand
+                            </option>
+                            <option value="compass_2">
+                                2) Craft 16 minecraft:planks from minecraft:log 
+                            </option>
+                            <option value="compass_3">
+                                3) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="compass_4">
+                                4) Craft 8 minecraft:stick from 4 minecraft:planks
+                            </option>
+                            <option value="compass_5">
+                                5) Craft 1 minecraft:wooden_pickaxe from 3 minecraft:planks and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="compass_6">
+                                6) Mine 11 minecraft:cobblestone with minecraft:wooden_pickaxe
+                            </option>
+                            <option value="compass_7">
+                                7) Craft 1 minecraft:furnace from 8 minecraft:cobblestone on minecraft:crafting_table
+                            </option>
+                            <option value="compass_8">
+                                8) Craft 1 minecraft:stone_pickaxe from 3 minecraft:cobblestone and minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="compass_9">
+                                9) Mine 3 minecraft:iron_ore with minecraft:stone_pickaxe
+                            </option>
+                            <option value="compass_10">
+                                10) Smelt 3 minecraft:iron_ingot from 3 minecraft:iron_ore on minecraft:furnace
+                            </option>
+                            <option value="compass_11">
+                                11) Craft 1 minecraft:iron_pickaxe from 3 minecraft:iron_ingot and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="compass_12">
+                                12) Mine 4 minecraft:iron_ore with minecraft:iron_pickaxe
+                            </option>
+                            <option value="compass_13">
+                                13) Smelt 4 minecraft:iron_ingot from 3 minecraft:iron_ore on minecraft:furnace
+                            </option>
+                            <option value="compass_14">
+                                14) Mine 1 minecraft:redstone with minecraft:iron_pickaxe
+                            </option>
+                            <option value="compass_15">
+                                15) Craft 1 minecraft:compass from 4 minecraft:iron_ingot and 1 minecraft:redstone on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_compass" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/compass.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="armor">Armor Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Craft minecraft:diamond_chestplate and equip it.</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="5" aria-label="size 5 select example">
+                            <option value="diamondchestplate_1">
+                                1) Mine 5 minecraft:log with barehand
+                            </option>
+                            <option value="diamondchestplate_2">
+                                2) Craft 16 minecraft:planks from minecraft:log 
+                            </option>
+                            <option value="diamondchestplate_3">
+                                3) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="diamondchestplate_4">
+                                4) Craft 8 minecraft:stick from 4 minecraft:planks
+                            </option>
+                            <option value="diamondchestplate_5">
+                                5) Craft 1 minecraft:wooden_pickaxe from 3 minecraft:planks and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="diamondchestplate_6">
+                                6) Mine 11 minecraft:cobblestone with minecraft:wooden_pickaxe
+                            </option>
+                            <option value="diamondchestplate_7">
+                                7) Craft 1 minecraft:furnace from 8 minecraft:cobblestone on minecraft:crafting_table
+                            </option>
+                            <option value="diamondchestplate_8">
+                                8) Craft 1 minecraft:stone_pickaxe from 3 minecraft:cobblestone and minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="diamondchestplate_9">
+                                9) Mine 3 minecraft:iron_ore with minecraft:stone_pickaxe
+                            </option>
+                            <option value="diamondchestplate_10">
+                                10) Smelt 3 minecraft:iron_ingot from 3 minecraft:iron_ore on minecraft:furnace
+                            </option>
+                            <option value="diamondchestplate_11">
+                                11) Craft 1 minecraft:iron_pickaxe from 3 minecraft:iron_ingot and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="diamondchestplate_12">
+                                12) Mine 8 minecraft:diamond with minecraft:iron_pickaxe
+                            </option>
+                            <option value="diamondchestplate_13">
+                                13) Craft 1 minecraft:diamond_chestplate from 8 minecraft:diamond on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_diamondchestplate" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/diamond_chestplate.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="decoration">Decoration Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Obtain the Minecraft:painting</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="5" aria-label="size 5 select example">
+                            <option value="painting_1">
+                                1) Kill sheep to mine 1 wool  
+                            </option>
+                            <option value="painting_2">
+                                2) Mine 2 minecraft:log with barehand
+                            </option>
+                            <option value="painting_3">
+                                3) Craft 8 minecraft:planks from 2 minecraft:log 
+                            </option>
+                            <option value="painting_4">
+                                4) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="painting_5">
+                                5) Craft 8 minecraft:stick from 4 minecraft:planks
+                            </option>
+                            <option value="painting_6">
+                                6) Craft 1 minecraft:painting from 8 minecraft:stick and 1 minecraft:wool on minecraft:crafting_table
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_painting" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/painting.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4 id="food">Food Group</h4>
+                <p></p>
+
+                <!--- Start of a block -->
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Kill chicken to obtain chicken and cook it.</h5>
+                    <div class="card-body">
+                        <p>Generated Language Plan (Click to view relevant part of executation!):</p>
+                        <select class="form-select" size="5" aria-label="size 5 select example">
+                            <option value="cookedchicken_1">
+                                1) Kill chicken 
+                            </option>
+                            <option value="cookedchicken_2">
+                                2) Mine 4 minecraft:log with barehand
+                            </option>
+                            <option value="cookedchicken_3">
+                                3) Craft 12 minecraft:planks from 3 minecraft:log 
+                            </option>
+                            <option value="cookedchicken_4">
+                                4) Craft 1 minecraft:crafting_table from 4 minecraft:planks
+                            </option>
+                            <option value="cookedchicken_5">
+                                5) Craft 4 minecraft:stick from 2 minecraft:planks
+                            </option>
+                            <option value="cookedchicken_6">
+                                6) Craft 1 minecraft:wooden_pickaxe from 3 minecraft:planks and 2 minecraft:stick on minecraft:crafting_table
+                            </option>
+                            <option value="cookedchicken_7">
+                                7) Mine 8 minecraft:cobblestone with minecraft:wooden_pickaxe
+                            </option>
+                            <option value="cookedchicken_8">
+                                8) Craft 1 minecraft:furnace from 8 minecraft:cobblestone on minecraft:crafting_table
+                            </option>
+                            <option value="cookedchicken_9">
+                                9) Cook 1 minecraft:cooked_chicken from 1 minecraft:chicken on minecraft:furnace
+                            </option>
+                        </select>
+                        <br>
+                        <p>Language Plan Executation<i>(1.5x Speed)</i>:</p>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_cookedchicken" width="100%" preload="metadata" poster="images/poster.png" playsinline controls>
+                                    <source src="videos/cooked_chicken.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <p>
+                                Both language and video plans are generated and stitched together through tree search.
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!--- End of a block --->
+
+
+            </div>
+        </div>
+
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h4>Related Projects</h4>
+                <p>Check out some of our related projects below! </p>
+
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/2310.08235.png" alt="GROOT" width="240" style="border-style: none">
+                    </td>
+                    <td width="75%" valign="middle">
+                        <a href="https://craftjarvis-groot.github.io/" target="_blank">
+                        <papertitle>GROOT: Learning to Follow Instructions by Watching Gameplay Videos</papertitle>
+                        </a>
+                        <p> 
+                            This work proposes to follow reference videos as instructions, which offer expressive goal specifications while eliminating the need for expensive text-gameplay annotations, and implements the agent GROOT in a simple yet effective encoder-decoder architecture based on causal transformers.  
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/2302.01560.png" alt="DEPS" width="240" style="border-style: none">
+                    </td>
+                    <td width="75%" valign="middle">
+                        <a href="https://arxiv.org/abs/2302.01560/" target="_blank">
+                        <papertitle>Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents</papertitle>
+                        </a>
+                        <p> 
+                            DEPS is an interactive planning approach based on Large Language Models (LLMs) for open-ended multi-task agents. It helps with better error correction from the feedback during the long-haul planning, while also bringing the sense of proximity via goal Selector, a learnable module that ranks parallel sub-goals based on the estimated steps of completion and improves the original plan accordingly.  
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/2310.08367.png" alt="MCU" width="240" style="border-style: none">
+                    </td>
+                    <td width="75%" valign="middle">
+                        <a href="https://arxiv.org/abs/2310.08367/" target="_blank">
+                        <papertitle>MCU: A Task-centric Framework for Open-ended Agent Evaluation in Minecraft</papertitle>
+                        </a>
+                        <p> 
+                            MCU is an open-ended Minecraft agent evaluation framework that can generate infinite tasks and reveal the difficulty of tasks. In MCU, "task" is a structured data object. MCU leverages "atom tasks" as building blocks to compose complex tasks. Each task is measured with six distinct difficulty scores, which offer a multi-dimensional assessment of a task from different angles.  We also maintain a unified benchmark, namely SkillForge, which comprises representative tasks under MCU framework. Researchers can filter specific tasks with certain properties or attributes from SkillForge to test their agent. 
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/2301.10034.png" alt="MC_Controller" width="240" style="border-style: none">
+                    </td>
+                    <td width="75%" valign="middle">
+                        <a href="https://arxiv.org/abs/2301.10034/" target="_blank">
+                        <papertitle>Open-World Multi-Task Control Through Goal-Aware Representation Learning and Adaptive Horizon Prediction</papertitle>
+                        </a>
+                        <p> 
+                            This paper studies the problem of learning goal-conditioned policies in Minecraft. It first identify two main challenges of learning such policies and then propose to combine a goal-sensitive backbone and an adaptive horizon prediction module to tackle these challenges.
+                        </p>
+                        <br>
+                    </td>
+                </tr>
+            </tbody></table>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3 class="mt-4 mb-2">BibTex</h3>
+                <pre><code>
+@article{wang2023jarvis1,
+    title   = {JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models},
+    author  = {Zihao Wang and Shaofei Cai and Anji Liu and Yonggang Jin and Jinbing Hou and Bowei Zhang and Haowei Lin and Zhaofeng He and Zilong Zheng and Yaodong Yang and Xiaojian Ma and Yitao Liang},
+    year    = {2023},
+    journal = {arXiv preprint arXiv: 2311.05997}
+    }
+                </code></pre>
+            </div>
+        </div>
+        
+        
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="form-group col-md-12">
+                    <textarea id="bibtex" class="form-control" readonly>
+</textarea>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
