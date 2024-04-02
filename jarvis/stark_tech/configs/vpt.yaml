@@ -1,0 +1,9 @@
+env: vpt_native
+enable_bot: True
+output_dir: trajs
+
+policy: vpt_native
+ckpt_path: ${oc.env:JARVISBASE_PRETRAINED}/rl-from-early-game-2x.weights
+
+on_switch_bot:
+  - vpt_on_switch_bot

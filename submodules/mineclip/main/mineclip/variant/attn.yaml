@@ -1,0 +1,7 @@
+# @package _global_
+
+
+pool_type: "attn.d2.nh8.glusw"
+
+ckpt:
+  checksum: "b5ece9198337cfd117a3bfbd921e56da"

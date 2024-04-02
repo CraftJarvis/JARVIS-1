@@ -1,0 +1,706 @@
+{
+    "steve": [
+        {
+            "text": "go explore",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "logs": [
+        {
+            "text": "chop down the tree",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "equip iron axe to chop down the tree",
+            "type": "equip",
+            "object_item": "iron_axe"
+        }
+    ],
+    "birch_log": [
+        {
+            "text": "chop down the birch tree",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break birch tree",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "oak_log": [
+        {
+            "text": "chop down the oak tree",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "mine oak logs",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "acacia_log": [
+        {
+            "text": "chop down the acacia tree",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "mine acacia log",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "apple": [
+        {
+            "text": "break leaves",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "seeds": [
+        {
+            "text": "collect seeds",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "yellow_flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a yellow flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "red_flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a red flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "magenta_flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a magenta flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "light_gray_flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a light gray flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "pink_flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a pink flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "orange_flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a orange flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "blue_flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a blue flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "white_flower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a white flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "dandelion": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a dandelion flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a yellow flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "poppy": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a poppy flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a red flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "allium": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a allium flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a magenta flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "azure_bluet": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a azure bluet flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a gray flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "pink_tulip": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a pink tulip flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a pink flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "red_tulip": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a red tulip flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a red flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "white_tulip": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a white tulip flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a white flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "orange_tulip": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a orange tulip flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a orange flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "oxeye_daisy": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a oxeye daisy flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a gray flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "cornflower": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a cornflower flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a blue flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "lily_of_the_valley": [
+        {
+            "text": "break a flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a lily of the valley flower",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break a white flower",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "sugar_gane": [
+        {
+            "text": "break sugar cane",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "sand": [
+        {
+            "text": "get sand",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "dig sand",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "gather a ton of sand",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "collect sand",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "cobblestone": [
+        {
+            "text": "equip wooden_pickaxe",
+            "type": "equip",
+            "object_item": "wooden_pickaxe"
+        },
+        {
+            "text": "dig down",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "stones": [
+        {
+            "text": "equip wooden_pickaxe",
+            "type": "equip",
+            "object_item": "wooden_pickaxe"
+        },
+        {
+            "text": "dig down and break stone blocks",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "iron_ore": [
+        {
+            "text": "dig down",
+            "type": "mine",
+            "object_item": null,
+            "timeout": 60
+        },
+        {
+            "text": "equip stone pickaxe",
+            "type": "equip",
+            "object_item": "stone_pickaxe"
+        },
+        {
+            "text": "break iron_ore blocks",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break iron blocks",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break the stone blocks and mine iron ore",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "gold_ore": [
+        {
+            "text": "dig down",
+            "type": "mine",
+            "object_item": null,
+            "timeout": 60
+        },
+        {
+            "text": "equip iron pickaxe",
+            "type": "equip",
+            "object_item": "iron_pickaxe"
+        },
+        {
+            "text": "break gold_ore blocks",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break stone, obtain gold ore",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "diamond": [
+        {
+            "text": "dig down",
+            "type": "mine",
+            "object_item": null,
+            "timeout": 60
+        },
+        {
+            "text": "equip iron pickaxe",
+            "type": "equip",
+            "object_item": "iron_pickaxe"
+        },
+        {
+            "text": "mine diamond ore",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break stone blocks, obtain diamond",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "obsidian": [
+        {
+            "text": "equip diamond pickaxe",
+            "type": "equip",
+            "object_item": "diamond_pickaxe"
+        },
+        {
+            "text": "break obsidian blocks",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break black blocks",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break the chest",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break black stones, obtain obsidian",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break portal blocks",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "redstone": [
+        {
+            "text": "dig down",
+            "type": "mine",
+            "object_item": null,
+            "timeout": 60
+        },
+        {
+            "text": "equip iron pickaxe",
+            "type": "equip",
+            "object_item": "iron_pickaxe"
+        },
+        {
+            "text": "mine redstone",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "mine redstone ore",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "mine redstone blocks",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "break stone, obtain redstone",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "dirt": [
+        {
+            "text": "get dirt",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "dig hole",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "collect dirt",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "wool": [
+        {
+            "text": "kill sheep",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "get wool",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "kill animals",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "white_wool": [
+        {
+            "text": "kill sheep",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "get wool",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "kill animals",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "mutton": [
+        {
+            "text": "kill sheep",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "get mutton",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "kill animals",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "leather": [
+        {
+            "text": "kill cow",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "kill animals",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "beef": [
+        {
+            "text": "kill cow",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "get beef",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "kill animals",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "porkchop": [
+        {
+            "text": "kill pig",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "get porkchop",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "kill animals",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "chicken": [
+        {
+            "text": "kill chicken",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "get chicken",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "kill animals",
+            "type": "mine",
+            "object_item": null
+        }
+    ],
+    "string": [
+        {
+            "text": "equip stone sword",
+            "type": "equip",
+            "object_item": "stone_sword"
+        },
+        {
+            "text": "equip wooden axe",
+            "type": "equip",
+            "object_item": "wooden_pickaxe"
+        },
+        {
+            "text": "kill spider",
+            "type": "mine",
+            "object_item": null
+        },
+        {
+            "text": "combat spider",
+            "type": "mine",
+            "object_item": null
+        }
+    ]
+}

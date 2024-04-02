@@ -1,0 +1,18 @@
+
+hydra:
+  run:
+    dir: outputs/${env}_${now:%m-%d_%H-%M-%S}
+
+env: play
+enable_bot: True
+output_dir: '.'
+
+policy: vpt_efficient_ctraj_1.5x
+ckpt_path: ${oc.env:JARVISBASE_PRETRAINED}/pre_act_ep_0_bc_119000.ckpt
+
+on_switch_bot: 
+  - imitate_on_switch_bot
+  - record_on_switch_bot
+
+on_switch_human:
+  - record_on_switch_human

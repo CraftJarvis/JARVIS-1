@@ -1,0 +1,9 @@
+gym==0.19.0
+x_transformers==0.27.1
+tokenizers
+torch
+hydra-core
+dm-tree
+Pillow
+transformers
+kornia

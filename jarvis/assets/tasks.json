@@ -1,0 +1,3140 @@
+[
+    {
+        "group": "hand",
+        "task": "painting",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "painting": 1
+        }
+    },
+    {
+        "group": "hand",
+        "task": "white_banner",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "white_banner": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "oak_wood",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_wood": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "birch_wood",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_wood": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "oak_slab",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_slab": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "birch_slab",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_slab": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "oak_planks",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_planks": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "birch_planks",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_planks": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "oak_log",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_log": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "birch_log",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_log": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "glass",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "glass": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "stone",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "stone": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "wooden_shovel",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "wooden_shovel": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "wooden_hoe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "wooden_hoe": 1
+        }
+    },
+    {
+        "group": "foodstuffs",
+        "task": "bowl",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "bowl": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "wooden_axe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "wooden_axe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "stone_shovel",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "stone_shovel": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "wooden_pickaxe",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "wooden_pickaxe": 1
+        }
+    },
+    {
+        "group": "foodstuffs",
+        "task": "golden_apple",
+        "env": {
+            "biome": "forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_apple": 1
+        }
+    },
+    {
+        "group": "foodstuffs",
+        "task": "gold_nugget",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "gold_nugget": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "clock",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "clock": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "golden_pickaxe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_pickaxe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "golden_chestplate",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_chestplate": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "golden_leggings",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_leggings": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "golden_boots",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_boots": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "golden_helmet",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_helmet": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "golden_axe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_axe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "golden_hoe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_hoe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "stone_pickaxe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "stone_pickaxe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "stone_axe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "stone_axe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "stone_hoe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "stone_hoe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "iron_pickaxe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_pickaxe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "diamond_shovel",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_shovel": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "iron_shovel",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_shovel": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "diamond_pickaxe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_pickaxe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "golden_shovel",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_shovel": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "oak_button",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_button": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "birch_button",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_button": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "redstone_torch",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "redstone_torch": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "tripwire_hook",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "tripwire_hook": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "iron_trapdoor",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_trapdoor": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "iron_door",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_door": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "redstone_block",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "redstone_block": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "oak_door",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_door": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "birch_door",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_door": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "oak_fence_gate",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_fence_gate": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "birch_fence_gate",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_fence_gate": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "oak_trapdoor",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_trapdoor": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "birch_trapdoor",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_trapdoor": 1
+        }
+    },
+    {
+        "group": "brewing",
+        "task": "cauldron",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "cauldron": 1
+        }
+    },
+    {
+        "group": "brewing",
+        "task": "glass_bottle",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "glass_bottle": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "diamond",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "jukebox",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jukebox": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "stick",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "stick": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "gold_ingot",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "gold_ingot": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "paper",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 10,
+                    "mob_name": "cow"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "paper": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "iron_ore",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_ore": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "iron_ingot",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_ingot": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "charcoal",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "charcoal": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "book",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "book": 1
+        }
+    },
+    {
+        "group": "miscellaneous",
+        "task": "bucket",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "bucket": 1
+        }
+    },
+    {
+        "group": "transportation",
+        "task": "rail",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "rail": 1
+        }
+    },
+    {
+        "group": "transportation",
+        "task": "oak_boat",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_boat": 1
+        }
+    },
+    {
+        "group": "transportation",
+        "task": "birch_boat",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_boat": 1
+        }
+    },
+    {
+        "group": "transportation",
+        "task": "minecart",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "minecart": 1
+        }
+    },
+    {
+        "group": "foodstuffs",
+        "task": "cooked_chicken",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 10,
+                    "mob_name": "chicken"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "cooked_chicken": 1
+        }
+    },
+    {
+        "group": "foodstuffs",
+        "task": "cooked_mutton",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 10,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "cooked_mutton": 1
+        }
+    },
+    {
+        "group": "animals",
+        "task": "white_wool",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "white_wool": 1
+        }
+    },
+    {
+        "group": "animals",
+        "task": "white_bed",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "white_bed": 1
+        }
+    },
+    {
+        "group": "foodstuffs",
+        "task": "cooked_porkchop",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 10,
+                    "mob_name": "pig"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "cooked_porkchop": 1
+        }
+    },
+    {
+        "group": "foodstuffs",
+        "task": "cooked_beef",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 10,
+                    "mob_name": "cow"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "cooked_beef": 1
+        }
+    },
+    {
+        "group": "occupation_block",
+        "task": "loom",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 10,
+                    "mob_name": "spider"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "loom": 1
+        }
+    },
+    {
+        "group": "occupation_block",
+        "task": "smithing_table",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "smithing_table": 1
+        }
+    },
+    {
+        "group": "occupation_block",
+        "task": "barrel",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "barrel": 1
+        }
+    },
+    {
+        "group": "occupation_block",
+        "task": "composter",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "composter": 1
+        }
+    },
+    {
+        "group": "occupation_block",
+        "task": "smoker",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "smoker": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "shield",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "shield": 1
+        }
+    },
+    {
+        "group": "decorations",
+        "task": "item_frame",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "cow"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "item_frame": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "leather_helmet",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "cow"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "leather_helmet": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "leather_chestplate",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "cow"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "leather_chestplate": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "leather_leggings",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "cow"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "leather_leggings": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "leather_boots",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "cow"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "leather_boots": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "iron_helmet",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_helmet": 1
+        }
+    },
+    {
+        "group": "combat",
+        "task": "wooden_sword",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "wooden_sword": 1
+        }
+    },
+    {
+        "group": "combat",
+        "task": "stone_sword",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "stone_sword": 1
+        }
+    },
+    {
+        "group": "combat",
+        "task": "golden_sword",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "golden_sword": 1
+        }
+    },
+    {
+        "group": "combat",
+        "task": "iron_sword",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_sword": 1
+        }
+    },
+    {
+        "group": "combat",
+        "task": "diamond_sword",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_sword": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "chain",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "chain": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "crafting_table",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "crafting_table": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "chest",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "chest": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "furnace",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "furnace": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "iron_bars",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_bars": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "ladder",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "ladder": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "oak_fence",
+        "env": {
+            "biome": "oak_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "oak_fence": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "birch_fence",
+        "env": {
+            "biome": "birch_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "birch_fence": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "diamond_helmet",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_helmet": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "diamond_leggings",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_leggings": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "diamond_chestplate",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_chestplate": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "diamond_boots",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_boots": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "diamond_hoe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_hoe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "diamond_axe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "diamond_axe": 1
+        }
+    },
+    {
+        "group": "iron",
+        "task": "hopper",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "hopper": 1
+        }
+    },
+    {
+        "group": "iron",
+        "task": "iron_nugget",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_nugget": 1
+        }
+    },
+    {
+        "group": "iron",
+        "task": "iron_leggings",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_leggings": 1
+        }
+    },
+    {
+        "group": "iron",
+        "task": "iron_chestplate",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_chestplate": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "piston",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "piston": 1
+        }
+    },
+    {
+        "group": "iron",
+        "task": "heavy_weighted_pressure_plate",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "heavy_weighted_pressure_plate": 1
+        }
+    },
+    {
+        "group": "iron",
+        "task": "shears",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "shears": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "activator_rail",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "activator_rail": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "compass",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "compass": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "iron_hoe",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_hoe": 1
+        }
+    },
+    {
+        "group": "tool",
+        "task": "crossbow",
+        "env": {
+            "biome": "plains",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 10,
+                    "mob_name": "spider"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "crossbow": 1
+        }
+    },
+    {
+        "group": "equipment",
+        "task": "iron_boots",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "iron_boots": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "acacia_wood",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_wood": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "acacia_slab",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_slab": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "acacia_planks",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_planks": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "acacia_log",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_log": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "acacia_button",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_button": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "acacia_door",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_door": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "acacia_fence_gate",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_fence_gate": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "acacia_trapdoor",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_trapdoor": 1
+        }
+    },
+    {
+        "group": "transportation",
+        "task": "acacia_boat",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_boat": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "acacia_fence",
+        "env": {
+            "biome": "savanna",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "acacia_fence": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "jungle_wood",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_wood": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "jungle_slab",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_slab": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "jungle_planks",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_planks": 1
+        }
+    },
+    {
+        "group": "building",
+        "task": "jungle_log",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_log": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "jungle_button",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_button": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "jungle_door",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_door": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "jungle_fence_gate",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_fence_gate": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "jungle_trapdoor",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_trapdoor": 1
+        }
+    },
+    {
+        "group": "transportation",
+        "task": "jungle_boat",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_boat": 1
+        }
+    },
+    {
+        "group": "decoration",
+        "task": "jungle_fence",
+        "env": {
+            "biome": "jungle",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "jungle_fence": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "redstone",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "redstone": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "dropper",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "dropper": 1
+        }
+    },
+    {
+        "group": "redstone",
+        "task": "note_block",
+        "env": {
+            "biome": "plains",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "note_block": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "yellow_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "yellow_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "red_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "red_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "magenta_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "magenta_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_gray_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_gray_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "pink_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "pink_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "orange_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "orange_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "blue_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "blue_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "white_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "white_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_blue_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_blue_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "purple_dye",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "purple_dye": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "yellow_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "yellow_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "red_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "red_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "magenta_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "magenta_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_gray_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_gray_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "pink_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "pink_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "orange_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "orange_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "blue_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "blue_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_blue_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_blue_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "purple_wool",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "purple_wool": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "yellow_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "yellow_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "red_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "red_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "magenta_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "magenta_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_gray_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_gray_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "pink_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "pink_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "orange_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "orange_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "orange_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "orange_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "blue_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "blue_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_blue_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_blue_bed": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "purple_bed",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "purple_bed": 1
+        }
+    },
+    {
+        "group": "animals",
+        "task": "white_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "white_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "yellow_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "yellow_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "red_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "red_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "magenta_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "magenta_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_gray_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_gray_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "pink_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "pink_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "orange_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "orange_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "blue_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "blue_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_blue_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_blue_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "purple_carpet",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "purple_carpet": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "yellow_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "yellow_banner": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "red_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "red_banner": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "magenta_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "magenta_banner": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_gray_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_gray_banner": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "pink_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "pink_banner": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "orange_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "orange_banner": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "blue_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "blue_banner": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "light_blue_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "light_blue_banner": 1
+        }
+    },
+    {
+        "group": "colorful",
+        "task": "purple_banner",
+        "env": {
+            "biome": "flower_forest",
+            "mobs": [
+                {
+                    "range_x": [
+                        -20,
+                        20
+                    ],
+                    "range_y": [
+                        5,
+                        10
+                    ],
+                    "range_z": [
+                        -20,
+                        20
+                    ],
+                    "number": 20,
+                    "mob_name": "sheep"
+                }
+            ],
+            "init_inventory": {}
+        },
+        "task_obj": {
+            "purple_banner": 1
+        }
+    }
+]

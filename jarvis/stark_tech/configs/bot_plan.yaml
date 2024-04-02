@@ -1,0 +1,11 @@
+env: play
+enable_bot: True
+output_dir: trajs
+
+policy: vpt_xattn_ctraj_baseline
+ckpt_path: ${oc.env:JARVISBASE_PRETRAINED}/ep_2_bc_2000_winlen_384.ckpt
+
+on_switch_bot: 
+  - plan_on_after_bot_step 
+on_after_bot_step: 
+  - plan_on_after_bot_step

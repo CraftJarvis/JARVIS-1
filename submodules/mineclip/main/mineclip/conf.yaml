@@ -1,0 +1,22 @@
+defaults:
+  - _self_  # all below configs will override this conf.yaml
+  - variant: attn  # avg or attn
+
+
+arch: "vit_base_p16_fz.v2.t2"
+hidden_dim: 512
+image_feature_dim: 512
+mlp_adapter_spec: "v0-2.t0"
+pool_type: ???  # filled by variant
+resolution: [160, 256]
+
+ckpt:
+  path: null  # filled by users
+  checksum: ???
+
+hydra:
+  job:
+    chdir: true
+  run:
+    dir: "."
+  output_subdir: null

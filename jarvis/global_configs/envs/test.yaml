@@ -1,0 +1,31 @@
+close_ended: True
+seed: 19961103
+random_tp_range: 1000
+origin_resolution: [640, 360]
+resize_resolution: [128, 128]
+time_limit: 6000000
+fast_reset: True
+slow_reset_interval: 9
+start_time: 0
+candidate_preferred_spawn_biome: 
+  - plains
+candidate_weather: 
+  - clear
+
+
+init_inventory: 
+  0: 
+    type: oak_log
+    quantity: 64
+  1:
+    type: cobblestone
+    quantity: 64
+  2:
+    type: coal
+    quantity: 64
+  3:
+    type: potato
+    quantity: 64
+  4:
+    type: diamond_boots
+    quantity: 1

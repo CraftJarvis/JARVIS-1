@@ -1,0 +1,55 @@
+defaults:
+  - _self_
+
+origin_resolution: [640, 360]
+resize_resolution: [128, 128]
+
+time_limit: 12000
+init_inventory: 
+  35: 
+    type: iron_axe
+    quantity: 1
+
+close_ended: False
+fast_reset: True # True
+slow_reset_interval: 10
+random_tp_range: 1000
+start_time: 0
+compute_delta_inventory: False
+candidate_preferred_spawn_biome: 
+  - plains
+candidate_weather: 
+  - clear
+
+enable_tasks: 
+  - jarvis
+
+task_conf:
+  jarvis:
+    text: 'Jarvis Task Suite'
+    reward_conf:
+      kill_entity:
+        jarvis:
+          num: 1
+          reward: 0.0
+          terminated: False
+      mine_block: 
+        jarvis:
+          num: 1
+          reward: 1.0
+          terminated: False
+      craft_item:
+        jarvis: 
+          num: 1
+          reward: 1.0
+          terminated: False
+
+reset_inventory_open: False
+
+custom_init_commands:
+  - /gamerule keepInventory true
+  - /effect give @a night_vision 99999 250 true
+  - /difficulty peaceful
+  - /gamerule doDaylightCycle false
+  - /time set 0
+  - /gamerule sendCommandFeedback false
