@@ -1,2 +1,0 @@
-recursive-include minedojo/sim *
-recursive-include minedojo *.json *.yaml *.java 

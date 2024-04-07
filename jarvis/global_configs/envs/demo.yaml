@@ -50,4 +50,4 @@ custom_init_commands:
 - /gamerule doDaylightCycle false
 - /time set 0
 - /gamerule sendCommandFeedback false
-seed: 5226906278564765959
+seed: 3623089998574470177

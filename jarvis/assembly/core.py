@@ -15,7 +15,7 @@ def translate_inventory(info):
             inventory[info['inventory'][i]['type']] += info['inventory'][i]['quantity']
         else:
             inventory[info['inventory'][i]['type']] = info['inventory'][i]['quantity']
-    if len(inventory.keys()):
+    if not len(inventory.keys()):
         return "Now my inventory has nothing."
     else:
         content = []
@@ -55,7 +55,7 @@ def get_skill(task, info):
         return skills[task][0]
     for i, skill in enumerate(skills[task]):
         skill_content += f"{i+1}. {skill['text']}, "
-    query = f"Task: {translate_task(task)}.\nSkills: {skill_content}\nAgent State: {translate_inventory(info)} {translate_equipment(info)} {translate_height(info)}\n"
+    query = f"Task: {translate_task(task)}.\nSkills: {skill_content}\nAgent State: {translate_inventory(info)} {translate_equipment(info)} {translate_height(info)}"
     print("query: ", query)
     
     response = client.chat.completions.create(
@@ -100,7 +100,7 @@ def get_skill(task, info):
         frequency_penalty=0,
         presence_penalty=0
     )
-    print("SKILL THOUGHT: ", response.choices[0].message.content)
+    print(response.choices[0].message.content)
     action_index = parse_action_index(response.choices[0].message.content)
     if not action_index:
         return random.choice(skills[task])

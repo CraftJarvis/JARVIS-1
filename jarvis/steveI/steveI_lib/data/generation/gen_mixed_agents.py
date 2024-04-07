@@ -8,7 +8,7 @@ import pickle
 import gym
 import numpy as np
 import cv2
-from mineclip import MineCLIP
+from jarvis.mineclip import MineCLIP
 import torch
 import os
 import uuid

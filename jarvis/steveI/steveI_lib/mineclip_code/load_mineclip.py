@@ -1,5 +1,5 @@
 import hashlib
-from mineclip import MineCLIP
+from jarvis.mineclip import MineCLIP
 
 
 def load(cfg, device):

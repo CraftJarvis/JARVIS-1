@@ -1,7 +1,0 @@
-# @package _global_
-
-
-pool_type: "avg"
-
-ckpt:
-  checksum: "d97a07f2830095a2016a8da22abcff52"

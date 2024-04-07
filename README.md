@@ -49,24 +49,14 @@ Once you have installed the required dependencies, you can run the `prepare_mcp.
 python prepare_mcp.py
 ```
 
-## Install JARVIS as a Python Package
-
-Our project relies on several submodules such as minedojo and STEVE-I. To install the project, you need to install these submodules first. 
-```bash
-cd submodules/minedojo
-pip install -e .
-cd submodules/mineclip
-pip install -e .
-```
-
 Then you can install JARVIS-1 as a Python package.
 ```bash
 pip install -e .
 ```
 
-<aside>
-💡 JARVIS-1 relies on gym==0.23.1, while mineclip and minedojo depend on a different version. If you encounter any errors related to gym versions during installation, you can safely ignore them.
-</aside>
+<!-- <aside>
+JARVIS-1 relies on gym==0.23.1, while mineclip and minedojo depend on a different version. If you encounter any errors related to gym versions during installation, you can safely ignore them.
+</aside> -->
 
 ### Download Weights
 
@@ -83,6 +73,7 @@ You need to set the environment variable `TMPDIR` and `OPENAI_API_KEY` first.
 export TMPDIR=/tmp
 export OPENAI_API_KEY="sk-******"
 ```
+### Learning with dynamic memory (Coming Soon)
 
 Then you can run the following command to start the JARVIS-1 agent.
 ```bash
@@ -93,6 +84,18 @@ You can also run the following command to start the JARVIS-1 agent in the headle
 ```bash
 xfvb-run -a python open_jarvis.py --task iron_pickaxe --timeout 10
 ```
+
+### Offline Evaluation with fixed memory
+
+```bash
+python offline_evaluation.py
+or
+xfvb-run -a python offline_evaluation.py
+```
+
+<aside>
+Now we only release the `offline_evaluation` code, i.e., you can use it to evaluate the JARVIS-1 agent on the fixed memory. We will release the `online_evaluation` code soon, i.e., you can use it to evaluate the JARVIS-1 agent on the growing memory.
+</aside>
 
 ## Differences from the Original JARVIS-1
 
