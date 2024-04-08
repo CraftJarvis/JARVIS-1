@@ -23,7 +23,7 @@ This project is intended for running on Linux only. Support for other platforms 
 
 ### Prepare the Environment
 
-We recommand to use Anaconda to manage the environment. If you don't have Anaconda installed, you can download it from [here](https://www.anaconda.com/products/distribution).
+We recommend using Anaconda to manage the environment. If you don't have Anaconda installed, you can download it from [here](https://www.anaconda.com/products/distribution).
 
 ```bash
 conda create -n jarvis python=3.10
@@ -60,9 +60,10 @@ JARVIS-1 relies on gym==0.23.1, while mineclip and minedojo depend on a differen
 
 ### Download Weights
 
-We controller rely on the weights of STEVE-I. You can download the weights from the [script](https://github.com/Shalev-Lifshitz/STEVE-1/blob/main/download_weights.sh). 
+JARVIS-1 relies on the weights of STEVE-I. You can download the weights from the [script](https://github.com/Shalev-Lifshitz/STEVE-1/blob/main/download_weights.sh). 
+Then you need to set the weights path in the file `jarvis/steveI/path.py`.
 
-<!-- Some controller weights from GROOT are not released yet. We will release them in the future. -->
+<!-- Some controller weights from GROOT have not been released yet. We will release them in the future. -->
 
 <!-- You also need to download our multimodal memory from the [huggingface link](https://huggingface.co/zhwang4ai/jarvis_memory). -->
 
