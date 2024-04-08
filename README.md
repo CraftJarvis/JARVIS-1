@@ -90,7 +90,7 @@ xfvb-run -a python open_jarvis.py --task iron_pickaxe --timeout 10
 ```bash
 python offline_evaluation.py
 or
-xfvb-run -a python offline_evaluation.py
+xvfb-run -a python offline_evaluation.py
 ```
 
 <aside>
