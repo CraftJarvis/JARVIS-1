@@ -1,4 +1,4 @@
-from jarvis.assembly.base import client
+from jarvis.assembly.base import client, get_model
 from jarvis.assembly.base import skills
 import random 
 
@@ -59,7 +59,7 @@ def get_skill(task, info):
     print("query: ", query)
     
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=get_model(),
         messages=[
             {
                 "role": "system",
@@ -107,8 +107,8 @@ def get_skill(task, info):
     return skills[task][action_index-1]
 
 class JARVIS:
-    def __init__(self, model = 'gpt-3.5-turbo'):
-        self.model = model
+    def __init__(self, model=None):
+        self.model = model if model is not None else get_model()
 
     # TODO: add online generating plans function 
     # zhwang4ai: release online planning agent in the next version 

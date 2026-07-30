@@ -69,10 +69,21 @@ Then you need to set the weights path in the file `jarvis/steveI/path.py`.
 
 ## Usage
 
-You need to set the environment variable `TMPDIR` and `OPENAI_API_KEY` first.
+You need to set the environment variable `TMPDIR` and your MiniMax API key first.
 ```bash
 export TMPDIR=/tmp
-export OPENAI_API_KEY="sk-******"
+export MINIMAX_API_KEY="******"
+```
+
+The planner talks to the MiniMax OpenAI-compatible API. You can optionally
+select the region, model, or an explicit base URL:
+```bash
+# Region selects the endpoint: "global_en" (default) or "cn_zh".
+export MINIMAX_REGION="global_en"
+# Model id: "MiniMax-M3" (default) or "MiniMax-M2.7".
+export MINIMAX_MODEL="MiniMax-M3"
+# Optional: override the base URL directly (takes precedence over MINIMAX_REGION).
+export MINIMAX_BASE_URL="https://api.minimax.io/v1"
 ```
 ### Learning with dynamic memory (Coming Soon)
 

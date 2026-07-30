@@ -1,7 +1,57 @@
 from jarvis.utils import write_video
 
+import os
 from openai import OpenAI
-client = OpenAI()
+
+# MiniMax exposes an OpenAI-compatible API. The global and mainland-China
+# endpoints share the same request/response schema but live on different hosts,
+# so the client is configured by region instead of being hardcoded.
+MINIMAX_BASE_URLS = {
+    "global_en": "https://api.minimax.io/v1",
+    "cn_zh": "https://api.minimaxi.com/v1",
+}
+DEFAULT_REGION = "global_en"
+
+# Supported MiniMax text models; the first entry is used as the default.
+MINIMAX_MODELS = ["MiniMax-M3", "MiniMax-M2.7"]
+DEFAULT_MODEL = MINIMAX_MODELS[0]
+
+
+def get_base_url():
+    """Resolve the MiniMax OpenAI-compatible base URL.
+
+    ``MINIMAX_BASE_URL`` takes precedence when set; otherwise ``MINIMAX_REGION``
+    selects between the global (``global_en``) and mainland-China (``cn_zh``)
+    endpoints, defaulting to the global endpoint.
+    """
+    base_url = os.environ.get("MINIMAX_BASE_URL")
+    if base_url:
+        return base_url
+    region = os.environ.get("MINIMAX_REGION", DEFAULT_REGION)
+    return MINIMAX_BASE_URLS.get(region, MINIMAX_BASE_URLS[DEFAULT_REGION])
+
+
+def get_model():
+    """Resolve the MiniMax text model id from ``MINIMAX_MODEL``.
+
+    Defaults to :data:`DEFAULT_MODEL` when the variable is unset.
+    """
+    return os.environ.get("MINIMAX_MODEL", DEFAULT_MODEL)
+
+
+def build_client():
+    """Create an OpenAI-compatible client pointed at the MiniMax API.
+
+    The API key is read from ``MINIMAX_API_KEY`` and falls back to
+    ``OPENAI_API_KEY`` for backward compatibility.
+    """
+    return OpenAI(
+        api_key=os.environ.get("MINIMAX_API_KEY") or os.environ.get("OPENAI_API_KEY"),
+        base_url=get_base_url(),
+    )
+
+
+client = build_client()
 
 import json
 from jarvis.assets import TASKS_FILE, TAG_ITEMS_FILE, SPAWN_FILE, SKILL_FILE
