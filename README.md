@@ -69,11 +69,37 @@ Then you need to set the weights path in the file `jarvis/steveI/path.py`.
 
 ## Usage
 
-You need to set the environment variable `TMPDIR` and `OPENAI_API_KEY` first.
+Set `TMPDIR` and the API key for your chosen provider. To use MiniMax:
 ```bash
 export TMPDIR=/tmp
-export OPENAI_API_KEY="sk-******"
+export MINIMAX_API_KEY="******"
 ```
+
+The planner talks to the MiniMax OpenAI-compatible API. You can optionally
+select the region, model, or an explicit base URL. The global endpoint is
+`https://api.minimax.io/v1`; the mainland-China endpoint is
+[`https://api.minimax.cn/v1`](https://platform.minimaxi.com/docs/api-reference/text-openai-api.md):
+```bash
+# Region selects the endpoint: "global_en" (default) or "cn_zh".
+export MINIMAX_REGION="global_en"
+# Current models: "MiniMax-M3.1-Flash" (default) or "MiniMax-M3".
+export MINIMAX_MODEL="MiniMax-M3.1-Flash"
+# Optional: override the base URL directly (takes precedence over MINIMAX_REGION).
+export MINIMAX_BASE_URL="https://api.minimax.io/v1"
+```
+Explicit `MINIMAX_MODEL` values, including saved legacy or custom model IDs,
+are passed through unchanged. Custom endpoints must support the selected model.
+MiniMax configuration requires `MINIMAX_API_KEY`; credentials are never borrowed
+from another provider. With no MiniMax variables set, the original client and
+its model default remain available (`OPENAI_API_KEY`, optional `OPENAI_BASE_URL`
+and `OPENAI_MODEL`).
+
+The planner leaves thinking and effort unset: Flash uses adaptive thinking and
+its default `max` effort, while M3 uses its API default. Current MiniMax models
+receive a 16,384-token output budget because thinking also consumes output
+tokens. This is a planner budget, not the model's output limit. See the
+[MiniMax Chat Completions documentation](https://platform.minimax.io/docs/api-reference/text-openai-api.md).
+
 ### Learning with dynamic memory (Coming Soon)
 
 Then you can run the following command to start the JARVIS-1 agent.

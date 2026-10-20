@@ -1,4 +1,4 @@
-from jarvis.assembly.base import client
+from jarvis.assembly.base import MINIMAX_MODELS, client, get_model, uses_minimax
 from jarvis.assembly.base import skills
 import random 
 
@@ -58,8 +58,11 @@ def get_skill(task, info):
     query = f"Task: {translate_task(task)}.\nSkills: {skill_content}\nAgent State: {translate_inventory(info)} {translate_equipment(info)} {translate_height(info)}"
     print("query: ", query)
     
+    model = get_model()
+    # Thinking shares the output budget on current MiniMax models.
+    max_tokens = 16384 if uses_minimax() and model in MINIMAX_MODELS else 256
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=model,
         messages=[
             {
                 "role": "system",
@@ -95,7 +98,7 @@ def get_skill(task, info):
             }
         ],
         temperature=1,
-        max_tokens=256,
+        max_tokens=max_tokens,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
@@ -107,8 +110,8 @@ def get_skill(task, info):
     return skills[task][action_index-1]
 
 class JARVIS:
-    def __init__(self, model = 'gpt-3.5-turbo'):
-        self.model = model
+    def __init__(self, model=None):
+        self.model = model if model is not None else get_model()
 
     # TODO: add online generating plans function 
     # zhwang4ai: release online planning agent in the next version 
