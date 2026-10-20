@@ -1,4 +1,4 @@
-from jarvis.assembly.base import client, get_model
+from jarvis.assembly.base import MINIMAX_MODELS, client, get_model, uses_minimax
 from jarvis.assembly.base import skills
 import random 
 
@@ -58,8 +58,11 @@ def get_skill(task, info):
     query = f"Task: {translate_task(task)}.\nSkills: {skill_content}\nAgent State: {translate_inventory(info)} {translate_equipment(info)} {translate_height(info)}"
     print("query: ", query)
     
+    model = get_model()
+    # Thinking shares the output budget on current MiniMax models.
+    max_tokens = 16384 if uses_minimax() and model in MINIMAX_MODELS else 256
     response = client.chat.completions.create(
-        model=get_model(),
+        model=model,
         messages=[
             {
                 "role": "system",
@@ -95,7 +98,7 @@ def get_skill(task, info):
             }
         ],
         temperature=1,
-        max_tokens=256,
+        max_tokens=max_tokens,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0

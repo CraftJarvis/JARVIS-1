@@ -8,13 +8,20 @@ from openai import OpenAI
 # so the client is configured by region instead of being hardcoded.
 MINIMAX_BASE_URLS = {
     "global_en": "https://api.minimax.io/v1",
-    "cn_zh": "https://api.minimaxi.com/v1",
+    "cn_zh": "https://api.minimax.cn/v1",
 }
 DEFAULT_REGION = "global_en"
 
-# Supported MiniMax text models; the first entry is used as the default.
-MINIMAX_MODELS = ["MiniMax-M3", "MiniMax-M2.7"]
+# Current MiniMax text models; explicit legacy/custom model IDs remain valid.
+MINIMAX_MODELS = ["MiniMax-M3.1-Flash", "MiniMax-M3"]
 DEFAULT_MODEL = MINIMAX_MODELS[0]
+
+
+def uses_minimax():
+    """Select MiniMax only when its configuration is explicitly supplied."""
+    return any(os.environ.get(name) for name in (
+        "MINIMAX_API_KEY", "MINIMAX_BASE_URL", "MINIMAX_REGION", "MINIMAX_MODEL",
+    ))
 
 
 def get_base_url():
@@ -32,23 +39,20 @@ def get_base_url():
 
 
 def get_model():
-    """Resolve the MiniMax text model id from ``MINIMAX_MODEL``.
-
-    Defaults to :data:`DEFAULT_MODEL` when the variable is unset.
-    """
-    return os.environ.get("MINIMAX_MODEL", DEFAULT_MODEL)
+    """Resolve the selected provider's model without rewriting explicit IDs."""
+    if uses_minimax():
+        return os.environ.get("MINIMAX_MODEL", DEFAULT_MODEL)
+    return os.environ.get("OPENAI_MODEL", "gpt-3.5-turbo")
 
 
 def build_client():
-    """Create an OpenAI-compatible client pointed at the MiniMax API.
-
-    The API key is read from ``MINIMAX_API_KEY`` and falls back to
-    ``OPENAI_API_KEY`` for backward compatibility.
-    """
-    return OpenAI(
-        api_key=os.environ.get("MINIMAX_API_KEY") or os.environ.get("OPENAI_API_KEY"),
-        base_url=get_base_url(),
-    )
+    """Create the selected client without sharing credentials across providers."""
+    if not uses_minimax():
+        return OpenAI()
+    api_key = os.environ.get("MINIMAX_API_KEY")
+    if not api_key:
+        raise ValueError("MINIMAX_API_KEY is required for MiniMax configuration")
+    return OpenAI(api_key=api_key, base_url=get_base_url())
 
 
 client = build_client()
